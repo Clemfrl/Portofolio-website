@@ -535,7 +535,7 @@ select {
 
 .social__logo {
   cursor: pointer;
-  margin: 0em 0.25em;
+  
 }
 
 .social__logo:hover {
@@ -597,7 +597,7 @@ select {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin: 20px;
+  margin: 40px 100px 20px 100px;
 }
 
 .grid__item {
@@ -693,9 +693,10 @@ select {
     padding: 0px 10px 10px 10px;
   }
   .profile {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
     align-content: center;
     align-items: center;
+    
   }
   .intro-text {
     text-align: center;
@@ -705,6 +706,9 @@ select {
     margin-bottom: 0;
     background-color: var(--background-primary);
     position: unset;
+  }
+  .contact-block {
+    margin: 20px 0px 20px 50px;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -722,18 +726,30 @@ select {
     text-align: center;
     padding-left: 10px;
   }
+
+
 }
-@media all and (max-width: 750px) {
+
+
+@media all and (max-width: 750px) and (max-width: 1000px) {
   .grid {
-    grid-gap: 10px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+
+  @media all and (max-width: 1000px) {
+    .grid {
+      grid-gap: 10px;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
