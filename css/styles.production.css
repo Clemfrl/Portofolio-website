@@ -704,6 +704,7 @@ select {
 
 .project-text {
   margin: 0px 50px;
+  cursor: default;
 }
 
 .project-link {
