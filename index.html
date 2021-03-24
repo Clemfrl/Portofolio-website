@@ -15,92 +15,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
+    <header id="header">
+      <nav class="nav">
+        <button class="toggle-menu">
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div id="menu" class="">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html"> Home<span style="color:#B90808">.</span> </a>
           </li>
-          <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >About</a
-            >
+          <li>
+            <a href="about.html"> About<span style="color:#B90808">.</span> </a>
           </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Work</a
-            >
+          <li>
+            <a href="work.html"> Work<span style="color:#B90808">.</span></a>
           </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Contact</a
-            >
+
+          <li>
+            <a href="contact.html"> Contact<span style="color:#B90808">.</span></a>
           </li>
         </ul>
       </nav>
-    </header>
-    <div class="about-page">
-    <div class="hello-title">Hello<span style="color:#B90808">!</span></div>
-    <div class="profile">
-      <img
-        src="img/pp1.png"
-        class="profile__picture"
-        alt="Clement Froehlich picture"
-      />
-      <div class="intro-text-block"></div>
-      <h1>Welcome to my Portfolio</h1>
-      <p class="intro-text">
-        My name is Clément Froehlich and I'm a full stack french developer
-        based in Berlin. You can here take a look on my projects, learn more
-        about me and check my career.
-      </p>
 
-      <a href="work.html" class="hvr-sweep-to-right">Check out some of my code</a>
-      <a href="about.html" class="hvr-sweep-to-left">More about me !</a>
+      <footer class="menu-footer">
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://github.com/Clemfrl">
+                <i class="github"></i>
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/cl%C3%A9ment-froehlich-42566bb7/">
+                <i class="linkedin"></i>
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/clemfrl/">
+                <i class="insta"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-</div>
-</div>
-
-<footer class="page-footer">
-      <div class="social-media">
-        <a href="https://github.com/Clemfrl" target="_blank">
-          <img src="svg/github_icon.svg" alt="Github" class="social__logo" />
-        </a>
-        <a href="https://www.instagram.com/clemfrl/" target="_blank">
-          <img
-            src="svg/facebook_icon.svg"
-            class="social__logo"
-            alt="Facebook"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/cl%C3%A9ment-froehlich-42566bb7/"
-          target="_blank"
-        >
-          <img
-            src="svg/linkedin_icon.svg"
-            class="social__logo"
-            alt="Linkedin"
-          />
-        </a>
+    <div class="about-page">
+      <div class="hello-title">Hello<span style="color:#B90808">!</span></div>
+      <div class="profile">
+        <img
+          src="img/pp1.png"
+          class="profile__picture"
+          alt="Clement Froehlich picture"
+        />
+        <div class="intro-text-block"></div>
+        <h1>Welcome to my Portfolio</h1>
+        <p class="intro-text">
+          My name is Clément Froehlich and I'm a full stack french developer
+          based in Berlin. You can here take a look on my projects, learn more
+          about me and check my career.
+        </p>
+  
+        <a href="work.html" class="hvr-sweep-to-right">Check out some of my code</a>
+        <a href="about.html" class="hvr-sweep-to-left">More about me !</a>
       </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+  </div>
+  </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
